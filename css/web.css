@@ -156,8 +156,6 @@ margin-bottom: 20px;
     width:80px; height:80px;
     border-radius:50px;
     text-align:left;
-    box-shadow:6px 6px 7px -3px rgba(0,0,0,0.2)
-    ;
 }
 #section1 button a{
     display: block;
@@ -173,15 +171,16 @@ margin-bottom: 20px;
     background-size:50px;
 }
 #section1 button {
-    border: none;
+    border:1px solid #eee;
     margin-right:20px;
     /* box-shadow: 10px 5px rgba(0, 0, 0, 0.2); */
 }
 
 #section1 button:hover{
-    background-color: #50ffb1;
-
+    box-shadow:6px 6px 7px -3px rgba(0,0,0,0.2)
+    ;
 }
+
 
 
 #mobile {position:relative;}
@@ -196,7 +195,6 @@ margin-bottom: 20px;
     top:245px; right:330px;
 }
 
-#mobile .thum div{}
 #mobile .thum img{
     display:block;
     width: 1000px;
