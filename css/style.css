@@ -1,0 +1,104 @@
+/* 주조색, 보조색 초록#50ffb1 , 보라#817ab8*, 검정#1b1b1b */
+#header {
+    margin-bottom:50px;
+}
+
+#main-nav{
+    clear:both;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#nav ul{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#nav ul li{
+    padding-bottom:20px;
+    font-weight:700;
+    position:relative;
+    margin-bottom: 10px;
+    /* overflow:hidden; */
+}
+#nav ul a, #nav ul img{
+    display:block;
+    padding:10px;
+    text-align: center;
+}
+#nav span{
+    display:block;
+    text-align:center;
+    opacity:0;
+}
+#nav li:hover span{
+    opacity:1;
+    transition:0.3s;
+}
+
+#nav li::after{
+    content:'';
+    display:block;
+    height:2px;
+    width:30px;
+    margin-top:5px;
+    margin-bottom:20px;
+    position:absolute;
+    right:-100%;
+    width:100%;
+    transition:0.3s;
+    opacity:0;
+}
+
+#nav li:hover::after{
+    right:0;
+    opacity:1;
+}
+
+#nav li:nth-child(1)::after{
+
+    background-color:#50ffb1;
+}
+#nav li:nth-child(2)::after{
+    background-color:#817ab8;
+}
+#nav li:nth-child(3)::after{
+    background-color:#1b1b1b;
+}
+
+#main {
+    width:90%;
+}
+#main h2{
+    font-size:4rem;
+    text-align: center;
+}
+
+#footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+#footer div{margin:auto 0;}
+#footer .cont p:first-child{
+    font-family:plus;
+    font-size:1.1rem;
+    font-weight:700;
+    background-color:#1b1b1b;
+    color:#ffffff;
+    text-align: center;
+    width:100px;
+    margin-bottom:10px;
+}
+#footer .cont span{
+    font-weight:700;
+}
+#footer .cont p:last-child{
+    font-size:0.8rem;
+    color:#777;
+    padding-top:30px;
+}

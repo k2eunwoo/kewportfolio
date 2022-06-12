@@ -1,0 +1,237 @@
+/* 주조색, 보조색 초록#50ffb1 , 보라#817ab8*, 검정#1b1b1b */
+#header {
+    margin-bottom:50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+#nav ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#nav ul li{
+    padding-bottom:20px;
+    font-weight:700;
+    position:relative;
+    margin:10px 15px;
+    /* overflow:hidden; */
+}
+#nav ul a, #nav ul img{
+    display:block;
+    padding:10px;
+    text-align: center;
+}
+#nav span{
+    display:block;
+    text-align:center;
+    opacity:0;
+}
+#nav li:hover span{
+    opacity:1;
+    transition:0.3s;
+}
+
+#nav li::after{
+    content:'';
+    display:block;
+    height:2px;
+    width:30px;
+    margin-top:5px;
+    margin-bottom:20px;
+    position:absolute;
+    right:-100%;
+    width:100%;
+    transition:0.3s;
+    opacity:0;
+}
+
+#nav li:hover::after{
+    right:0;
+    opacity:1;
+}
+
+#nav li:nth-child(1)::after{
+    background-color:#50ffb1;
+}
+#nav li:nth-child(2)::after{
+    background-color:#817ab8;
+}
+#nav li:nth-child(3)::after{
+    background-color:#1b1b1b;
+}
+
+/* tabset */
+.tabSet {
+    margin-bottom: 100px;
+    /* border: 2px solid red; */
+}
+.tabSet ul.tabs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+.tabSet ul.tabs li{
+    width:calc((100% - 5px *2)/3);
+    font-size: 1.6rem;
+    font-weight:700;
+    padding:5px 0;
+    text-align:left;
+}
+.tabSet ul.tabs li a{
+    /* display:block; */
+    text-align:center;
+    /* width:50px; */
+}
+.tabSet ul.tabs li a.on{
+    color:#50ffb1;
+}
+.panel{display: none;}
+/* tabset */
+
+
+/* panels */
+#section1{padding:0 100px 0 100px;}
+#section1 .panels {padding:100px 0 10px 0;}
+#section1 .panels img{
+    width:100%;
+}
+#section1 #web{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#section1 article#web , #section1 article#mobile{
+    margin-bottom: 80px;
+}
+
+#section1 #web p, #section1 #mobile p{
+    padding:10px 0;
+    font-family:gmarket;
+    font-weight:700;
+}
+
+#section1 .w_txt, #section1 .m_txt{
+    margin:auto 0;
+}
+#section1 h2.title{
+    color:#50ffb1;
+    font-size:2.8rem;
+    font-weight: 700;
+}
+#section1 h4 {
+    font-weight:700;
+    margin-bottom:50px;
+    color:#1b1b1b;
+    padding-top:10px;
+    font-size:1.3rem;
+}
+
+.txt_box {display:flex;flex-direction: column;flex-wrap: nowrap; justify-content: space-around; margin-bottom:40px;}
+#section1 .txt_box li {
+display:flex;flex-direction:row;  justify-content: flex-start;
+font-size:1.1rem;
+margin-bottom: 20px;
+}
+
+#section1 .s_tit{
+    display:block;
+    width:75px;
+    font-size:1.2rem;
+    font-weight:700;
+    color:#1b1b1b;
+    text-align: left;
+    margin-right:50px;
+}
+
+#section1 .btn{
+    margin-right:0;
+}
+#section1 button{
+    width:80px; height:80px;
+    border-radius:50px;
+    text-align:left;
+    box-shadow:6px 6px 7px -3px rgba(0,0,0,0.2)
+    ;
+}
+#section1 button a{
+    display: block;
+    width:80px; height:80px;
+}
+
+#section1 button:nth-child(1) {
+    background:url('../img/icon/ic_link.png') no-repeat center;
+    background-size:50px;
+}
+#section1 button:nth-child(2) {
+    background:url('../img/icon/ic_overview.png') no-repeat center;
+    background-size:50px;
+}
+#section1 button {
+    border: none;
+    margin-right:20px;
+    /* box-shadow: 10px 5px rgba(0, 0, 0, 0.2); */
+}
+
+#section1 button:hover{
+    background-color: #50ffb1;
+
+}
+
+
+#mobile {position:relative;}
+
+#mobile .phone{
+    position:absolute;
+    top:150px; right:250px;
+    z-index:99;
+}
+#mobile video {
+    position:absolute;
+    top:245px; right:330px;
+}
+
+#mobile .thum div{}
+#mobile .thum img{
+    display:block;
+    width: 1000px;
+    margin:0 auto;
+}
+#section1 .pin-panel h2{
+    text-align:center;
+}
+
+
+/* panels end */
+
+#footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+#footer div{margin:auto 0;}
+#footer .cont p:first-child{
+    font-family:plus;
+    font-size:1.1rem;
+    font-weight:700;
+    background-color:#1b1b1b;
+    color:#ffffff;
+    text-align: center;
+    width:100px;
+    margin-bottom:10px;
+}
+#footer .cont span{
+    font-weight:700;
+}
+#footer .cont p:last-child{
+    font-size:0.8rem;
+    color:#777;
+    padding-top:30px;
+}

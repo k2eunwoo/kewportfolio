@@ -1,0 +1,236 @@
+/* 주조색, 보조색 초록#50ffb1 , 보라#817ab8*, 검정#1b1b1b */
+#header {
+    margin-bottom:50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+#nav ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+#nav ul li{
+    padding-bottom:20px;
+    font-weight:700;
+    position:relative;
+    margin:10px 15px;
+    /* overflow:hidden; */
+}
+#nav ul a, #nav ul img{
+    display:block;
+    padding:10px;
+    text-align: center;
+}
+#nav span{
+    display:block;
+    text-align:center;
+    opacity:0;
+}
+#nav li:hover span{
+    opacity:1;
+    transition:0.3s;
+}
+
+#nav li::after{
+    content:'';
+    display:block;
+    height:2px;
+    width:30px;
+    margin-top:5px;
+    margin-bottom:20px;
+    position:absolute;
+    right:-100%;
+    width:100%;
+    transition:0.3s;
+    opacity:0;
+}
+
+#nav li:hover::after{
+    right:0;
+    opacity:1;
+}
+
+#nav li:nth-child(1)::after{
+    background-color:#50ffb1;
+}
+#nav li:nth-child(2)::after{
+    background-color:#817ab8;
+}
+#nav li:nth-child(3)::after{
+    background-color:#1b1b1b;
+}
+
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    margin-bottom:150px;
+}
+/* #profile div{
+    width:calc((100% - 50px)/2);
+} */
+.profile_text {
+    margin: auto 0;
+}
+.profile_h2{
+    font-weight:500;
+    font-size:3rem;
+    margin-bottom:30px;
+    position:relative;
+}
+.profile_h2 span{
+    display: block;
+    width:300px;height:300px;
+    background:url('../img/sticker.png') no-repeat;
+    position: absolute;
+    top:-50px; left:520px;   
+}
+.profile_text2 {
+    line-height:25px;
+}
+.profile_img {width:30%; }
+.profile_img img{
+    width:100%;
+}
+h2.title{
+    font-weight:700;
+    font-size:2rem;
+    margin-bottom:100px;
+    position:relative;
+    text-align: center;
+} 
+
+#more_pro{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom:50px;
+}
+
+
+/* PROGRESSBAR */
+.skill-progress{
+    width: 500px;
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.089); */
+}
+
+.title2{
+    text-align: center;
+    margin-bottom:30px;
+    background-color: #1b1b1b;
+    color:#fff;
+    width:120px;
+    padding:5px;
+}
+.item {
+    transition: 0.4s;
+    margin-bottom:30px;
+}
+
+.item p{
+    overflow: hidden;   /*p태그 높이 회복*/
+    margin-bottom : 0;      /* p태그 자체가 차지하는 마진을 없애기 */
+}
+.item p span{
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+.item p.more{
+    font-size:0.9rem;
+    color:#444444; 
+    }
+
+/* p태그안에 있는 span을 왼쪽, 오른쪽 정렬을 시켜야함 */
+.item p span:nth-child(1){  /*span:first-child*/
+    float : left;
+}
+.item p span:nth-child(2){  /*span:end-child*/
+    float: right;
+}
+.progress{
+    padding : 5px;
+    border-radius: 3px;
+}
+/* 그라데이션 막대 */
+.progress-level{
+    height: 10px;
+    background : linear-gradient(to right, #50ffb1, #817ab8);   /*방향(deg각도도 가능), 시작색상, 종료색상*/
+    animation: ani;
+    animation-duration: 1s;                               /*1초만에 발생한 애니메이션이 끝나게 함*/
+
+    animation-fill-mode: both; 
+    /*애니메이션이 반복이 끝나면 -> 무조건 keyframe에서 100%구간에 머무르게 해라
+    애니메이션은 기본적으로, 0%->100%->0%로 진행됨. 
+    근데, animation-fill-mode 설정이 없으면 100%구간에서 멈추지 않고 애니메이션이 부자연스러움
+    100%구간에서 멈추게 해서 -> 로딩 후, 바로 꽉찬 막대를 만들기 위해 fill-mode를 사용
+    */
+}
+
+/* 처음 로드될 때, 그라데이션바들이 서서히 차오르는 애니메이션 주기 */
+@keyframes ani{
+    0%{
+        width: 0;   /*시작할 때만 width가 0이게만 하면 됨*/
+    }
+}
+
+.skill-progress .item:nth-of-type(1) .progress-level{
+    animation-delay: 0s;
+}
+.skill-progress .item:nth-of-type(2) .progress-level{
+    animation-delay: 0.2s;
+}
+.skill-progress .item:nth-of-type(3) .progress-level{
+    animation-delay: 0.4s;
+}
+.skill-progress .item:nth-of-type(4) .progress-level{
+    animation-delay: 0.6s;
+}
+/* skillprogress  끝 */
+
+
+
+#more_pro .info span:nth-child(odd){
+    display:inline-block;
+    width:120px;
+    font-weight:700;
+    margin-right: 30px;
+    float:left;
+}
+
+#more_pro .info p {
+    margin-bottom:10px;
+}
+#footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+#footer div{margin:auto 0;}
+#footer .cont p:first-child{
+    font-family:plus;
+    font-size:1.1rem;
+    font-weight:700;
+    background-color:#1b1b1b;
+    color:#ffffff;
+    text-align: center;
+    width:100px;
+    margin-bottom:10px;
+}
+#footer .cont span{
+    font-weight:700;
+}
+#footer .cont p:last-child{
+    font-size:0.8rem;
+    color:#777;
+    padding-top:30px;
+}

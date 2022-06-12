@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*웹폰트 css 파일 불러오기*/
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+/* 저장된 글꼴 파일 선언*/
+@font-face { 
+      font-family : NanumSquareB;  
+      font-weight:500;  
+      src : url(../font/NanumSquareB.woff); 
+} 
+
+@font-face { 
+      font-family : NanumSquareR;  
+      font-weight:300;  
+      src : url(../font/NanumSquareR.woff); 
+} 
+
+@font-face { 
+      font-family : NanumSquareRoundB;  
+      font-weight:500;  
+      src : url(../font/NanumSquareRoundB.ttf); 
+} 
+
+@font-face { 
+      font-family : NanumSquareRoundR;  
+      font-weight:300;  
+      src : url(../font/NanumSquareRoundR.ttf); 
+} 
+
+* {margin:0; padding:0;}
+html{font-size:16px;}
+body{ font-size:16px;
+      color:#424242;
+      font-family: 'NanumSquareR', Notosans-kr;}
+
+#wrap {width: 100%;}
+.inner {width:100%; max-width:1440px; min-width:1300; margin: 0 auto;}
+ul, ol, li{list-style-type:none}
+img, fieldset{border:none;vertical-align: middle}
+/* vertical-align은 html 입력 시 자동으로 나오는 텍스트 위치를 지정해줌. */
+/* hr 수평선 만드는 태그 */
+hr {clear:both;border:none}
+a {color:inherit;text-decoration:none}
+table{border-collapse:collapse}
+input, textarea {
+       color:inherit;font-size:inherit;
+       font-family:inherit;
+       vertical-align: middle;}
+button{outline:0}
+

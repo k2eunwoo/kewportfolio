@@ -1,0 +1,32 @@
+#container {
+	position:relative;
+	max-width:100%;
+	width:100%;
+}
+
+.pin-panel{
+	position:absolute;
+	/* background:white; */
+}
+
+.pin-panel img {
+	width:100%;
+	max-width:100%;
+	height:auto;
+}
+
+.pin-panel h2 {
+	font-size:1em;
+	font-weight:bold;
+	margin:20px;
+}
+
+.pin-panel:hover {
+	box-shadow:1px 1px 10px rgba(0,0,0,0.3);
+	margin-top:-5px;
+}
+
+a:link, a:hover {
+	text-decoration:none;
+}
+

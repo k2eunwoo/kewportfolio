@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 한글폰트 */
+@font-face{font-family:gmarket;src: url(../font/GmarketSansTTFMedium.woff);font-weight:300;}
+@font-face{font-family:gmarketL;src: url(../font/GmarketSansTTFLight.woff);font-weight:100;}
+@font-face{font-family:gmarketB; src: url(../font/GmarketSansTTFBold.woff);font-weight:500;}
+
+/* 영문폰트 */  
+@font-face{font-family:pluslight; src: url(../font/PlusJakartaSans-Light.woff);font-weight:100;}
+@font-face{font-family:plusbold; src: url(../font/PlusJakartaSans-Bold.woff);font-weight:500;}
+@font-face{font-family:plusboldex; src: url(../font/PlusJakartaSans-ExtraBoldItalic.woff);font-weight:700;}
+
+* {margin:0; padding:0;transition:0.3s;}
+body{color:#1b1b1b;font-size:1rem;font-family:plus , gmarket; }
+ul, li, ol {
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+.inner{max-width:1700px;margin:0 auto;}
+.logo img{width:100px;}
+.logo {padding-top:20px;}
+
