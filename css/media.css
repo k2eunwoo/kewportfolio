@@ -6,10 +6,19 @@
     #section1 .panels #web img {
         width: 80%;
     }
+}
+
+@media all and (max-width:1550px){
+    .inner {max-width:1200px;}
+    #section1 h2.title {
+        font-size: 2.2rem;
+    }
+}
+@media all and (max-width:1300px){
     #mobile .phone {
-        right: 150px;
+        right: 30px;
     }
     #mobile video {
-        right: 230px;
+        right: 110px;
     }
 }
