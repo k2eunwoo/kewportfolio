@@ -6,6 +6,12 @@
     #section1 .panels #web img {
         width: 80%;
     }
+    #mobile .phone {
+        right: 150px;
+    }
+    #mobile video {
+        right: 230px;
+    }
 }
 
 @media all and (max-width:1550px){
@@ -13,12 +19,24 @@
     #section1 h2.title {
         font-size: 2.2rem;
     }
-}
-@media all and (max-width:1300px){
     #mobile .phone {
-        right: 30px;
+        right: 10px;
     }
     #mobile video {
-        right: 110px;
+        right: 90px;
+    }
+}
+@media all and (max-width:1200px){
+    #section1 h2.title {
+        font-size: 2.2rem;
+    }
+    #section1 .txt_box li {
+        font-size: 0.9rem;
+    }
+    #mobile .phone {
+        right: 10px;
+    }
+    #mobile video {
+        right: 90px;
     }
 }
