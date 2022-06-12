@@ -1,0 +1,15 @@
+@media all and (max-width:1700px){
+    .inner {max-width:1500px;}
+    #section1 h2.title {
+        font-size: 2.4rem;
+    }
+    #section1 .panels #web img {
+        width: 80%;
+    }
+    #mobile .phone {
+        right: 150px;
+    }
+    #mobile video {
+        right: 230px;
+    }
+}

@@ -24,7 +24,7 @@ button{cursor:pointer;}
 /* 유저 로그인 */
 .user{ margin:150px 0 0 0; text-align: center;}
 .user div {margin-bottom:50px;}
-.user div .pro{display:block; width:150px; height:150px;margin:50px auto;border-radius:150px; background-color: #4B4B4B;background-image:url('../images/profile.jpg'); background-size:100%;}
+.user div .pro{display:block; width:150px; height:150px;margin:50px auto;border-radius:150px; background-color: #4B4B4B;background-image:url('../icon/user.svg'); background-size:100%;}
 .user .pro2{font-size:1.2rem; font-weight:700;}
 .user dt{
   text-align:center;
@@ -64,6 +64,7 @@ button{cursor:pointer;}
   justify-content:space-between;
 }
 #btn1 ul , #btn2 ul{display:none}
+#btn1 .sub a{color:#424383;}
 #wrap_head #btn1 > li , #wrap_head #btn2 > li{
   font-family:NotoSansKR-black;
 	font-size:2.8rem;
