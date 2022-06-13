@@ -1,0 +1,38 @@
+@media all and (max-width:1700px){
+    .inner{max-width:1500px;}
+}
+
+@media all and (max-width:760px){
+    .inner{margin-left:10px;margin-right: 10px;}
+    #main h2 {
+        font-size: 3.3rem;
+        margin-bottom: 50px;
+    }
+    .logo img {
+        width: 80px;
+    } 
+    #main-nav {
+        flex-direction: column;
+    }
+    #main-nav{margin-bottom: 50px;}
+    #nav ul {
+        flex-direction:  column;
+    }
+    #nav ul li {
+        display: flex;
+        flex-direction: row;
+    }
+    #nav ul a, #nav ul img {
+        padding: 5px;
+    }
+    #nav ul span {
+        display: block;
+        margin:auto;
+    }
+    #nav li:nth-child(1)::after {
+        background-color: none;
+    }
+    #nav li::after {
+        display:none;
+    }
+}

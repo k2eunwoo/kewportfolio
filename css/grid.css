@@ -4,29 +4,29 @@
 	width:100%;
 }
 
-.pin-panel{
+#container .pin-panel{
 	position:absolute;
 	/* background:white; */
 }
 
-.pin-panel img {
+#container .pin-panel img {
 	width:100%;
 	max-width:1000px;
 	height:auto;
 }
 
-.pin-panel h2 {
+#container .pin-panel h2 {
 	font-size:1em;
 	font-weight:bold;
 	margin:20px;
 }
 
-.pin-panel:hover {
+#container .pin-panel:hover {
 	box-shadow:1px 1px 10px rgba(0,0,0,0.3);
 	margin-top:-5px;
 }
 
-a:link, a:hover {
+#container a:link, #container a:hover {
 	text-decoration:none;
 }
 

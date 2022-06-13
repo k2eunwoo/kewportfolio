@@ -24,22 +24,39 @@ $(function(){
             no_columns:4
         });
     });
-const modal = document.querySelector(".modal");
-const img = document.querySelector(".img");
-const modal_img = document.querySelector(".modal_content");
-const span = document.querySelector(".close");
 
-img.addEventListener('click', ()=>{
-  modalDisplay("block");
-  modal_img.src = img.src;
+//top버튼
+jQuery( '#top_btn' ).click( function() {
+  var htmloffset = jQuery( 'html' ).offset();
+  jQuery( 'html, body' ).animate( { scrollTop : htmloffset.top }, 300 );
 });
-span.addEventListener('click', ()=>{
-  modalDisplay("none");
-});
-modal.addEventListener('click', ()=>{
-  modalDisplay("none");
-});
-function modalDisplay(text){
-  modal.style.display = text;
-}
+
+//이미지 클릭시 팝업
+$('.pin-panel').each(function(){
+  $(this).click(function(event){
+      event.preventDefault();
+      var img_name = $(this).find('.pin_a');
+      var img_src = $(img_name).attr('href');
+      var img_alt = $(img_name).attr('title');
+      
+      //a-1)pin-panel 내의 alt값을 찾아서 변수에 저장
+      //a-2) 이미지 타이틀을 보여줄 변수 저장
+      var height = $(this).attr('title');
+      //b -1) title 속성에 저장된 hight값을 찾아 변수에 저장
+
+    //  $('#modal').fadeIn();
+      $('#modal').addClass('on')
+      $('#modal img').attr('src',img_src);
+      $('#modal .txt').text(img_alt);
+      //a-3) 제목이 떠야할 위치의 html에 alt값이 저장되어있는 변수를 text로 대체
+      $('.body').removeClass('height')
+      $('.body').addClass(height);
+       //b-2) 모달팝업의 body(모달 이미지부분)에 height라는 클래스를 변수명으로 추가함
+  })
+})
+      $("#modal button").click(function() {
+      //$("#modal").fadeOut();
+      $('#modal').removeClass('on')
+      });
+
 })//ready
