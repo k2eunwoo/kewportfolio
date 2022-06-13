@@ -28,7 +28,7 @@
 #nav span{
     display:block;
     text-align:center;
-    opacity:0;
+    opacity:0.3;
 }
 #nav li:hover span{
     opacity:1;

@@ -19,7 +19,10 @@ a{
     text-decoration:none;
     color:inherit;
 }
-.inner{max-width:1700px;margin:0 auto;}
+#wrap {
+    overflow-x: hidden;
+}
+.inner{max-width:1700px; margin:0 auto;}
 .logo img{width:100px;}
 .logo {padding-top:20px;}
 
