@@ -72,7 +72,7 @@
         font-size:1.4rem;
     }
     #section1 .w_txt{
-        width:430px;
+        width:100%;
         margin: auto;
         text-align: center;
     }
@@ -114,6 +114,3 @@
     }
 }
 
-@media all and (max-width:450px){
-
-}
