@@ -5,8 +5,11 @@
 @media all and (max-width:760px){
     .inner{margin-left:10px;margin-right: 10px;}
     #main h2 {
-        font-size: 3.3rem;
-        margin-bottom: 50px;
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    #main .main_txt{
+        margin-bottom: 80px;
     }
     .logo img {
         width: 80px;
@@ -16,14 +19,16 @@
     }
     #main-nav{margin-bottom: 50px;}
     #nav ul {
-        flex-direction:  column;
+        padding-left:20px;
+        flex-direction: column;
+        justify-content:space-around;
     }
-    #nav ul li {
+    #nav ul li a{
         display: flex;
-        flex-direction: row;
+        flex-direction:row;
     }
     #nav ul a, #nav ul img {
-        padding: 5px;
+        display: block
     }
     #nav ul span {
         display: block;
@@ -36,3 +41,4 @@
         display:none;
     }
 }
+

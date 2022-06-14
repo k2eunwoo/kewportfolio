@@ -94,8 +94,7 @@
 /* tabset */
 
 
-/* panels */
-#section1{padding:0 100px 0 100px;}
+/* panels */#section1{padding:0 100px 0 100px;}
 #section1 .panels {padding:100px 0 10px 0;}
 #section1 .panels img{
     max-width:100%;
@@ -116,13 +115,22 @@
     font-weight:700;
 }
  
-#section1 .w_txt, #section1 .m_txt{
+#section1 .w_txt{
     margin:auto 20px;
+    width:65%;
+}
+ #section1 .m_txt{
+    margin:auto 20px;
+}
+#section1 #web .thum{
+    width:28%;
+    max-width:1000px;
 }
 #section1 h2.title{
     color:#50ffb1;
-    font-size:2.8rem;
+    font-size:3vw;
     font-weight: 700;
+    /* (64px X 100) / 1280(px) = 5(vw) */
 }
 #section1 h4 {
     font-weight:700;
@@ -132,22 +140,27 @@
     font-size:1.3rem;
 }
 
-.txt_box {display:flex;flex-direction: column;flex-wrap: nowrap; justify-content: space-around; margin-bottom:40px;}
+.txt_box {display:flex;flex-direction: column;flex-wrap: nowrap; justify-content: space-around;
+    width:100%; margin-bottom:40px;}
 #section1 .txt_box li {
 display:flex;flex-direction:row;  justify-content: flex-start;
-font-size:1.1rem;
 margin-bottom: 20px;
 }
 
 #section1 .s_tit{
     display:block;
-    width:75px;
-    font-size:1.2rem;
+    width:125px;
+    font-size:1.1rem;
     font-weight:700;
     color:#1b1b1b;
     text-align: left;
     margin-right:50px;
 }
+#section1 .s_tit2{
+    font-size:1rem;
+    width:calc(100% - 80px);
+}
+
 
 #section1 .btn{
     margin-right:0;
@@ -177,8 +190,7 @@ margin-bottom: 20px;
 }
 
 #section1 .btn button:hover{
-    box-shadow:6px 6px 7px -3px rgba(0,0,0,0.2)
-    ;
+    box-shadow:6px 6px 7px -3px rgba(0,0,0,0.2);
 }
 
 #mobile {position:relative;}
@@ -195,6 +207,7 @@ margin-bottom: 20px;
 #mobile .thum{
     max-width:1000px;
     margin:0 auto;
+
 }
 #mobile .thum img{
     width: 100%;
@@ -237,12 +250,19 @@ margin-bottom: 20px;
     position: fixed;
     bottom: 1rem;
     right: 1rem; 
-    cursor: pointer;
-    background-color: #ffffff;
-    color:#1b1b1b;
     box-shadow:6px 6px 7px -3px rgba(0,0,0,0.2);
     margin:auto;
-    width:50px;
+    border-radius:60px;
+    overflow: hidden;
+}
+#top_btn button{
+    width:60px;
+    height:60px;
+    border:none;
+    cursor: pointer;
+    font-size:1.1rem;
+    color:#fff;
+    background-color:#1b1b1b;
 }
 
 

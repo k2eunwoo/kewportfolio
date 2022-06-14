@@ -11,6 +11,7 @@
 @font-face{font-family:plusboldex; src: url(../font/PlusJakartaSans-ExtraBoldItalic.woff);font-weight:700;}
 
 * {margin:0; padding:0;transition:0.3s;}
+html{font-size:16px;}
 body{color:#1b1b1b;font-size:1rem;font-family:plus , gmarket; }
 ul, li, ol {
     list-style: none;
@@ -19,6 +20,7 @@ a{
     text-decoration:none;
     color:inherit;
 }
+
 #wrap {
     overflow-x: hidden;
 }
@@ -26,3 +28,27 @@ a{
 .logo img{width:100px;}
 .logo {padding-top:20px;}
 
+/* 스크롤바 디자인 */
+body::-webkit-scrollbar {
+    width: 6px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #817ab8; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+
+.body::-webkit-scrollbar {
+    width: 6px;  /* 스크롤바의 너비 */
+}
+.body::-webkit-scrollbar-thumb {
+    height: 100px; /* 스크롤바의 길이 */
+    background: #eee; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
+}

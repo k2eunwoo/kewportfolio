@@ -34,8 +34,8 @@ body{ font-size:16px;
       color:#424242;
       font-family: 'NanumSquareR', Notosans-kr;}
 
-#wrap {width: 100%;}
-.inner {width:100%; max-width:1440px; min-width:1300; margin: 0 auto;}
+#wrap {width:100%; min-width:1440px; position:relative;}
+.inner {width:1440px; margin: 0 auto;}
 ul, ol, li{list-style-type:none}
 img, fieldset{border:none;vertical-align: middle}
 /* vertical-align은 html 입력 시 자동으로 나오는 텍스트 위치를 지정해줌. */
