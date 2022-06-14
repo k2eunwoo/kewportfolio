@@ -195,15 +195,15 @@ margin-bottom: 20px;
 
 #mobile {position:relative;}
 
-#mobile .phone{
+#mobile .mobile_box{
     position:absolute;
     top:150px; right:250px;
     z-index:99;
 }
-#mobile video {
+/* #mobile video {
     position:absolute;
     top:245px; right:330px;
-}
+} */
 #mobile .thum{
     max-width:1000px;
     margin:0 auto;

@@ -78,18 +78,23 @@
 .profile_text {
     margin: auto 0;
 }
+.profile_text2 {
+    line-height: 25px;
+    word-break:keep-all;
+}
 .profile_h2{
     font-weight:500;
     font-size:3rem;
     margin-bottom:30px;
     position:relative;
+      /* (64px X 100) / 1280(px) = 5(vw) */
 }
 .profile_h2 span{
     display: block;
-    width:300px;height:300px;
+    width:300px;height:200px;
     background:url('../img/sticker.png') no-repeat;
     position: absolute;
-    top:-50px; left:520px;   
+    top:calc(100% - 200px); right:-10%;   
 }
 .profile_text2 {
     line-height:25px;

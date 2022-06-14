@@ -72,6 +72,7 @@
         font-size:1.4rem;
     }
     #section1 .w_txt{
+        width:430px;
         margin: auto;
         text-align: center;
     }
@@ -115,11 +116,4 @@
 
 @media all and (max-width:450px){
 
-    #nav {
-        transform: translate(0 , 0);
-    }
-
-    #section1 .panels #web img {
-        width: 100%;
-    }
 }

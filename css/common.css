@@ -9,6 +9,7 @@
 @font-face{font-family:pluslight; src: url(../font/PlusJakartaSans-Light.woff);font-weight:100;}
 @font-face{font-family:plusbold; src: url(../font/PlusJakartaSans-Bold.woff);font-weight:500;}
 @font-face{font-family:plusboldex; src: url(../font/PlusJakartaSans-ExtraBoldItalic.woff);font-weight:700;}
+@font-face{font-family:jalnan; src: url(../font/Jalnan.woff);font-weight:700;}
 
 * {margin:0; padding:0;transition:0.3s;}
 html{font-size:16px;}
@@ -20,10 +21,8 @@ a{
     text-decoration:none;
     color:inherit;
 }
-
 #wrap {
-    overflow-x: hidden;
-}
+    overflow-x: hidden;}
 .inner{max-width:1700px; margin:0 auto;}
 .logo img{width:100px;}
 .logo {padding-top:20px;}

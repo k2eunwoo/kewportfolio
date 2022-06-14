@@ -4,12 +4,6 @@
 
 
 /*===================== TAB ======================*/
-@media all and (max-width:1800px){
-    .inner{max-width:1600px;}
-    #main .nav {
-        display:none;
-    }
-}
 @media all and (max-width:1024px){
     .inner{max-width:824px;}
     #main .main_text {
