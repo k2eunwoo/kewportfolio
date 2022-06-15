@@ -10,8 +10,8 @@
 @font-face{font-family:plusbold; src: url(../font/PlusJakartaSans-Bold.woff);font-weight:500;}
 @font-face{font-family:plusboldex; src: url(../font/PlusJakartaSans-ExtraBoldItalic.woff);font-weight:700;}
 @font-face{font-family:jalnan; src: url(../font/Jalnan.woff);font-weight:700;}
-
-* {margin:0; padding:0;transition:0.3s;}
+ 
+* {margin:0; padding:0;transition:0.3s;} 
 html{font-size:16px;}
 body{color:#1b1b1b;font-size:1rem;font-family:plus , gmarket; }
 ul, li, ol {
