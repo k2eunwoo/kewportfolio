@@ -6,14 +6,20 @@
     flex-wrap:nowrap;
     justify-content:space-between;
 }
-
-#nav ul{
+#nav {
     position:fixed;
     top:0; right:0;
+    z-index:999;
+      width:100%;
+      background-color: #fff;
+}
+
+#nav ul{
+
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
-    justify-content:space-between;
+    justify-content:flex-end;
 }
 #nav ul li{
     padding-bottom:20px;
@@ -368,14 +374,12 @@ margin-bottom: 20px;
     /*opacity: 0;*/
     transform: translate(-50%, -50%);
     width:80%;
-
 }
 #modal .body.height {
     top: 20px;
     transform: translate(-50%, 0);
     overflow-y:auto;
     height:100%;
-
 }
 
 #modal .body img {

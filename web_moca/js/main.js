@@ -14,6 +14,59 @@ $(function(){
     autoplaySpeed : 3000,
   });
 
+
+  $('#header h1 a').each(function(){ 
+    if($(window).width() < 800){ 
+      var img = $(this).find('img');
+      var img_off = img.attr('src'); 
+      var img_on = img_off.replace('_off','_on')
+      img.attr('src',img_on);
+   }else{
+      var img = $(this).find('img');
+      var img_on = img.attr('src'); 
+      var img_off = img_on.replace('_on','_off')
+        img.attr('src',img_off);
+      }
+    })
+    $(window).resize(function(){
+      // 윈도우 창을 사용자가 움직이기 시작하면 이미지변수 다시 불러와야 함
+    $('#header h1 a').each(function(){ 
+      if($(window).width() < 800){ 
+        var img = $(this).find('img');
+        var img_off = img.attr('src'); 
+        var img_on = img_off.replace('_off','_on')
+        img.attr('src',img_on);
+     }else{
+        var img = $(this).find('img');
+        var img_on = img.attr('src'); 
+        var img_off = img_on.replace('_on','_off')
+          img.attr('src', img_off);
+        }
+    })  
+  })
+    /*
+  1) 윈도우 사이즈가 800이하로 줄어듬
+  2) 기존에 있던 로고(_off)에서(_on이미지로 바뀜)
+  */
+
+  
+  
+  // $('#header h1 a').each(function(){
+  //   var img = $('#header h1 a').find('img')
+  //   var src_off = $(img).find('src');
+  //   var src_on = $(src_off).replace('_off' , '_on')
+  //   $(window).resize(function (){
+  //     // width값을 가져오기
+  //     var width_size = window.outerWidth;
+      
+  //     // 800 이하인지 if문으로 확인
+   
+  //   })
+  
+  // })
+
+
+  
   // 슬라이드 시간차 애니메이션
   $('.wrap').scroll(function(){
     /********main**************/

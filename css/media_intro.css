@@ -17,3 +17,28 @@
         opacity:0.3;
     }
 }
+@media all and (max-width:800px){
+    .logo img {
+        width: 80px;
+    }
+    #nav{
+        transform: translate(-50px , 0);
+    }
+    #nav ul li {
+        margin:5px;
+        /* overflow: hidden; */
+        font-size:1rem;
+    }
+}
+@media all and (max-width:400px){
+    #nav ul li {
+        font-size:0.8rem;
+    }
+    #nav {
+        transform: translate(0px , 0);
+    }
+    #nav ul a, #nav ul img {
+        padding: 3px;
+        text-align: center;
+    }
+}
